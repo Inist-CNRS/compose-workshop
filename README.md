@@ -30,11 +30,18 @@ L'ojectif de cette étape est de lancer les deux conteneurs via docker-engine :
 * Construction de l'image :
 
 ```
-  docker build -t dijon/nodeapp:1 .
-  
+  docker build -t dijon/nodeapp:1 . 
 ```
 
+* Démarrage du conteneur de l'application
 
+```
+  docker run --name nodeapp dijon/nodeapp:1
+```
+
+*NE FONCTIONNE PAS* => Ecrire la commande qui :
+ - mappe le port 8080 entre le conteneur et la machine hôte
+ - relie le conteneur `redis` au conteneur `nodeapp` 
  
 ## Cas n°2 : Wordpress
 
