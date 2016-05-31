@@ -39,7 +39,7 @@ L'ojectif de cette étape est de lancer les deux conteneurs via docker-engine :
   docker run --name nodeapp dijon/nodeapp:1
 ```
 
-*NE FONCTIONNE PAS* => Ecrire la commande qui :
+**NE FONCTIONNE PAS** => Ecrire la commande qui :
  - mappe le port 8080 entre le conteneur et la machine hôte
  - relie le conteneur `redis` au conteneur `nodeapp` 
  
