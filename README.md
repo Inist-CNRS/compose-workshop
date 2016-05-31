@@ -21,7 +21,18 @@ Le Contenu de ce TP est situé dans le répertoire `app-node`. Chaque étape est
 
 L'ojectif de cette étape est de lancer les deux conteneurs via docker-engine :
   
+*  Récupération et démarrage du conteneur redis :
+
+```
+  docker run --name redis redis:3.2
+```
+
+* Construction de l'image :
+
+```
+  docker build -t dijon/nodeapp:1 .
   
+```
 
 
  
