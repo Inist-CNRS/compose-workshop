@@ -4,7 +4,7 @@ const bluebird = require('bluebird'),
       express = require('express'),
       app = express(),
       redis = require("redis"),
-      client = redis.createClient(),
+      client = redis.createClient({host: "redis"}),
       PORT = 8080;
 
 bluebird.promisifyAll(redis.RedisClient.prototype);
