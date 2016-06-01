@@ -18,9 +18,9 @@ L'ojectif de cette étape est de lancer les deux conteneurs et de les connecter 
   docker build -t dijon/nodeapp .
 ```
 
-* Démarrage du conteneur de l'application
+* Démarrage du conteneur de l'application sur le port 8000
 ```
-  docker run -d --name nodeapp ##LieCteConteneurARedis## -p 8080:8080 dijon/nodeapp
+  docker run -d --name nodeapp ##OptionPourLierCeConteneurARedis## ##OptionPourMapperLePortDuConteneur## dijon/nodeapp
 ```
 
-Pour tester si votre application web NodeJS est bien connecté à Redis, vous pouvez consulter la page à l'adresse suivante : http://localhost:8080
+Pour tester si votre application web NodeJS est bien connectée à Redis, vous pouvez consulter la page à l'adresse suivante : http://localhost:8080
