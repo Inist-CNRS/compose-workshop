@@ -6,4 +6,4 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - .:/usr/src/my-app
+      - client:/usr/src/my-app/client

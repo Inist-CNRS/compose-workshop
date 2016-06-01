@@ -3,10 +3,11 @@ FROM node:4
 MAINTAINER Rémy Méja <remy.meja@inist.fr>
 MAINTAINER Claude Niederlender <claude.niederlender@inist.fr>
 
-RUN mkdir /usr/src/my-app
+RUN mkdir -p /usr/src/my-app
+RUN mkdir -p /usr/src/my-app/client
 WORKDIR /usr/src/my-app
 COPY app.js .
-COPY index.html .
+COPY client/index.html .
 COPY package.json .
 RUN npm install
 
