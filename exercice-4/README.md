@@ -17,7 +17,7 @@ Une fois votre `docker-compose.yml` finalisé, vous pouvez lancer la commande su
 docker-compose up
 ```
 
-Pour vérifier que la base MariaDB est bien démarrée rendez-vous à la page [http://localhost:8000](http://localhost:8080).
+Pour vérifier que la base MariaDB est bien démarrée rendez-vous à la page [http://localhost:8080](http://localhost:8080).
 
 Pour vérifier que votre site Wordpress est bien démarré et opérationnel, rendrez-vous à la page [http://localhost:8000](http://localhost:8000) et effectuez l'étape d'initialisation. Vous pourrez ensuite constater les changements sur la base de données via PhpMyAdmin.
 
