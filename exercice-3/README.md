@@ -11,7 +11,9 @@ Une fois votre `docker-compose.yml` finalisé, vous pouvez lancer la commande su
 docker-compose up
 ```
 
-Pour tester si votre application web NodeJS est bien connectée à Redis, vous pouvez consulter la page à l'adresse suivante : [http://localhost:8000](http://localhost:8000).
+Pour vérifier que votre application web NodeJS est bien démarrée, consulter la page à l'adresse suivante : [http://localhost:8000](http://localhost:8000). Pour constater que le chat est bien fonctionnel, afficher cette page dans 2 navigateurs différents et saisir quelques phrases dans la partie basse de l'écran.
+
+Pour vérifier que le volume a bien été monté, modifier le fichier `client/index.html` et recharger la page de l'application.
 
 Pour stopper tous les conteneurs liés aux services décrits dans docker-compose, vous pouvez lancer la commande suivante :
 ```
