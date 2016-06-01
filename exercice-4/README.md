@@ -21,6 +21,6 @@ Pour vérifier que la base MariaDB est bien démarrée rendez-vous à la page [h
 
 Pour vérifier que votre site Wordpress est bien démarré et opérationnel, rendrez-vous à la page [http://localhost:8000](http://localhost:8000) et effectuez l'étape d'initialisation. Vous pourrez ensuite constater les changements sur la base de données via PhpMyAdmin.
 
-Utiliser les commandes habituelles pour stopper et supprimer les conteneurs de l'exercice. Une fois les conteneurs supprimés, vous pourrez les recréer/redémarrer et constater que le contenu de site Wordpress a été conservé grâce à la persistence des données de la base MariaDB dans le volume monté dans le réperoitre `.data`.
+Utiliser les commandes habituelles pour stopper et supprimer les conteneurs de l'exercice. Une fois les conteneurs supprimés, vous pourrez les recréer/redémarrer et constater que le contenu de site Wordpress a été conservé grâce à la persistence des données de la base MariaDB dans le volume correspondant.
 
 *Note à propos des volumes :* Le répertoire de données utilisé par MariaDB (`.data` dans la solution) est créé avec les permissions de la machine invitée, il appartient donc à l'utilisateur **root**.  Idéalement, il faudrait donc le monter dans le répertoire `/var/lib...` de la machine hôte
