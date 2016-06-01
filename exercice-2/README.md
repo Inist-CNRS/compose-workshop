@@ -6,7 +6,7 @@ L'ojectif de cette étape est de lancer les deux conteneurs et de les connecter 
 
 Pour cela, nous mettons à votre disposons un fichier docker-compose.yml a remplir avec les bonnes instructions.
 
-Il faudra indiquer pour le service web, relative à notre application NodeJS, de construire l'image à partir de son Dockerfile et de la lier au service redis. Pour le service redis, il suffit simplement de lui indiquer de se baser sur son image officielle présente sur [Dockerhub](https://hub.docker.com/).
+Il faudra indiquer pour le service web relatif à notre application NodeJS, de construire l'image à partir de son Dockerfile et de la lier au service redis. Pour le service redis, il suffit simplement de lui indiquer de se baser sur son image officielle présente sur [Dockerhub](https://hub.docker.com/).
 
 Une fois votre docker-compose.yml finalisé, vous pouvez lancer la commande suivante pour démarrer tous les services :
 ```
