@@ -1,9 +1,12 @@
 'use strict';
 
-const app = require('express')(),
+const express = require('express'),
+      app = express(),
       http = require('http').Server(app),
       io = require('socket.io')(http),
       PORT = 8080;
+
+app.use(express.static('client'));
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/client/index.html');
