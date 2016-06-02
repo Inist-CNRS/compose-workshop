@@ -13,7 +13,7 @@ L'application est découpée en 5 micro-services :
   - un service `hasher` calculant des hash
   - une base données redis 
   - un `worker` générant un "dockercoin" toutes les secondes en s'appuyant sur `rng` et `hasher`. Le dockercoin est stocké dans la base redis
-  - une IHM `webui` affichant le nb de dockercoins générés par seconde en quasi-temps réel 
+  - une IHM `webui` affichant le nombre de dockercoins générés par seconde en quasi-temps réel 
 
 Pour construire et démarrer l'application en arrière-plan, utiliser la commande suivante :
 ```
